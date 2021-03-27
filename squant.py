@@ -6,7 +6,6 @@ from scipy.stats import norm
 from scipy import stats
 
 
-# Credit to Dr. Patro for the code from line 10 to 18 to precompute effective length values
 mu = 200
 sd = 25
 cond_means = []
@@ -176,7 +175,6 @@ def write_to_file(output_file, num_transcripts, transcripts, n_arr):
     f.close()
 
 
-# Credit to Dr. Patro for the following three functions that allowed me to test my estimation's accuracy
 def _error(actual: np.ndarray, predicted: np.ndarray):
     """ Simple error """
     return np.array(actual) - np.array(predicted)
